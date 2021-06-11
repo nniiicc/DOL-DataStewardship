@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DA State Department of Licensing: Data Stewarship</title>
+  <meta name="description" content="A training guide for WA State DOL Data Stewards">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="DA State Department of Licensing: Data Stewarship" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A training guide for WA State DOL Data Stewards" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="DA State Department of Licensing: Data Stewarship" />
+  
+  <meta name="twitter:description" content="A training guide for WA State DOL Data Stewards" />
+  
+
+<meta name="author" content="Nic Weber">
+
+
+<meta name="date" content="2021-06-07">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="lis.html">
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#structure-of-course"><i class="fa fa-check"></i>Structure of course</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="data-stewarship-fundamentals.html"><a href="data-stewarship-fundamentals.html"><i class="fa fa-check"></i><b>1</b> Data Stewarship Fundamentals</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-stewarship-fundamentals.html"><a href="data-stewarship-fundamentals.html#example-1"><i class="fa fa-check"></i>Example 1</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="lis.html"><a href="lis.html"><i class="fa fa-check"></i><b>2</b> LIS</a></li>
+<li class="chapter" data-level="3" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>3</b> Methods</a></li>
+<li class="chapter" data-level="4" data-path="dol.html"><a href="dol.html"><i class="fa fa-check"></i><b>4</b> DOL</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="dol.html"><a href="dol.html#artificial-intelligence"><i class="fa fa-check"></i><b>4.1</b> Artificial Intelligence</a></li>
+<li class="chapter" data-level="4.2" data-path="dol.html"><a href="dol.html#machine-learning"><i class="fa fa-check"></i><b>4.2</b> Machine Learning</a></li>
+<li class="chapter" data-level="4.3" data-path="dol.html"><a href="dol.html#data-visualization"><i class="fa fa-check"></i><b>4.3</b> Data Visualization</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>5</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">DA State Department of Licensing: Data Stewarship</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-stewarship-fundamentals" class="section level1" number="1">
+<h1 number="1"><span class="header-section-number">1</span> Data Stewarship Fundamentals</h1>
+
+<div id="example-1" class="section level2 unnumbered rmdcaution">
+<h2 class="unnumbered">Example 1</h2>
+<p>Throughout the first chapter of this book we’ve discussed the idea that data are fundamentally relational - they mean different things to different customers at different points in time. To understand this relational nature of data it can be helpful to look at an example of how the same data are displayed to customers in different settings. These settings drive the stewarship of data given the needs of a customer that may vary over time.</p>
+<p>Below is a screenshot of the <a href="https://www.wsdot.wa.gov/data/tools/geoportal/?config=traffic">Washington Department of Transportation’s Traffic GeoData Portal</a>. This map displays realtime traffic count data from routes and interstates throughout Washington.</p>
+<p><img src="images/V2.png" /></p>
+<p>This traffic map is interactive - it allows a customer to select a route, or even a point on a route, where data traffic is collected and see the realtime estimates of things like “How many single unit trucks are on this route in the last hour.” This view of the data is useful for getting a quick overview of what the state of traffic is at any one moment in time. But, lets assume that instead of a quick overview of the realtime data an analyst at DOL wants access to the data that is powering this visualiztion. They may want this data for a variety of reasons - they may want to map all of the single use trucks on the road for June 1st and determine what percentage of singule use trucks are licsensed in the state of the WA. The WSDOT traffic geodata portal allows us to view this data by selecting a polygon and “printing” the data. If we choose to do this then we get an easy to manipulate data table that looks like the following:</p>
+<table>
+<colgroup>
+<col width="5%" />
+<col width="5%" />
+<col width="29%" />
+<col width="10%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="4%" />
+<col width="4%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Object ID</th>
+<th>Route ID</th>
+<th>Location</th>
+<th>Direction of Travel</th>
+<th>Single Unit Truck Percent</th>
+<th>Double Unit Truck Percent</th>
+<th>Triple Unit Truck Percent</th>
+<th>2019 AADT</th>
+<th>Shape</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1220</td>
+<td>410</td>
+<td>At Milepost 116.26 A: PERMANENT TRAFFIC RECORDER S818 WEST</td>
+<td>Bothways</td>
+<td>9.87</td>
+<td>2.14</td>
+<td>0.06</td>
+<td>2,100</td>
+<td>Point</td>
+</tr>
+<tr class="even">
+<td>3624</td>
+<td>12</td>
+<td>At Milepost 185.62 A: PERMANENT TRAFFIC RECORDER S818 EAST</td>
+<td>Bothways</td>
+<td>4.93</td>
+<td>4.31</td>
+<td>1.38</td>
+<td>4,500</td>
+<td>Point</td>
+</tr>
+<tr class="odd">
+<td>2005</td>
+<td>12</td>
+<td>Before Milepost 185.44 A: RIGHT WYE CONNECTION SR 12</td>
+<td>Bothways</td>
+<td>Null</td>
+<td>Null</td>
+<td>Null</td>
+<td>2,500</td>
+<td>Point</td>
+</tr>
+<tr class="even">
+<td>3809</td>
+<td>12</td>
+<td>At Milepost 185.25 A: PERMANENT TRAFFIC RECORDER S818 SOUTH</td>
+<td>Bothways</td>
+<td>7.45</td>
+<td>7.18</td>
+<td>1.34</td>
+<td>2,500</td>
+<td>Point</td>
+</tr>
+<tr class="odd">
+<td>2759</td>
+<td>12</td>
+<td>After Milepost 185.48 A: RIGHT WYE CONNECTION SR 12</td>
+<td>Bothways</td>
+<td>Null</td>
+<td>Null</td>
+<td>Null</td>
+<td>4,500</td>
+<td>Point</td>
+</tr>
+<tr class="even">
+<td>4329</td>
+<td>12</td>
+<td>From Milepost 188.65 A to Milepost 189.87 A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5,700</td>
+<td>Polyline</td>
+</tr>
+<tr class="odd">
+<td>2163</td>
+<td>12</td>
+<td>From Milepost 185.48 A to Milepost 188.65 A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4,500</td>
+<td>Polyline</td>
+</tr>
+<tr class="even">
+<td>2323</td>
+<td>410</td>
+<td>From Milepost 114.40 A to Milepost 116.37 A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2,100</td>
+<td>Polyline</td>
+</tr>
+<tr class="odd">
+<td>4299</td>
+<td>12</td>
+<td>From Milepost 178.86 A to Milepost 183.45 A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2,300</td>
+<td>Polyline</td>
+</tr>
+<tr class="even">
+<td>1434</td>
+<td>12</td>
+<td>From Milepost 183.45 A to Milepost 185.48 A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2,500</td>
+<td>Polyline</td>
+</tr>
+</tbody>
+</table>
+This table is much more informative and useful for analysis than a map. It gives us variables (such as Object ID, Route ID, Location). It also gives us observations of things like the number of single use trucks on Route 410 at milepost 116.2 on June 1st at 12:00pm.<br />
+
+</div>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="lis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-intro.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

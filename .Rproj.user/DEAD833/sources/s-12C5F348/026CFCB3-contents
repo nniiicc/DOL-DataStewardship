@@ -1,0 +1,30 @@
+--- 
+title: "DA State Department of Licensing: Data Stewarship"
+author: "Nic Weber"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "A training guide for WA State DOL Data Stewards"
+---
+
+# Introduction {-}
+Data is a relational concept. It can mean different things to different stakeholders in different contexts. In the context of the WA Department of Licensing, this relational aspect of data, and the challenges of data management, was succinctly described as follows: 
+
+DOL has a diverse collection of applications to support its operational needs. There are many common data elements across these applications that are currently being defined and used separately and inconsistently.    
+While this usually has no impact on the operation of the individual applications, it creates problems when trying to match and accumulate data from multiple systems for analysis and forecasting. The solution to this problem is to centrally define and manage this data so it is referenced and used consistently by all applications (2008).  
+
+The goal of this course is to both introduce terminology and techniques for working with data, as well as foreground principles in effective data stewardship. In doing so, we will try to help reduce the complexity of managing and providing services for data across DOL. 
+
+## Structure of course {-}
+The book is structured around three chapters:
+
+- Data Stewardship - Fundamental Concepts - In this chapter a working definition of data is introduced. We will discuss how data and collections of data can be differentiated by types and roles. We will also cover metadata and the process of organizing and structuring documentation to make data more accessible and useful to stakeholders. We will conclude with an overview of data governance (and where a data steward fits into governance at DOL) as well as Data Ethics. 
+- Data Stewardship - In Practice: The second chapter covers best practices in data management, records management and disposal, and how to apply concepts of data quality. We will also cover the selection and use of standards related to data and metadata, and how to best serve stakeholders of data at DOL through data interviews. 
+- Data Stewardship - Applications: In the final chapter we will discuss data infrastructures including repositories for storing and preserving data, how to select and apply standards to data (and metadata), techniques for cleaning or tidying data, and some general applications for managing databases and visualizing data. 
+
+Each chapter has a set of Intended Learning Outcomes (ILOs) or what you should be able to take away from and understand upon reading the chapter; suggested readings where you can dive deeper into a topic of interest, as well as general working definitions that you can use for future reference. At the end of each section of the book there will be a short video that summarizes the main themes and provides some examples that will help contextual a topic. 
