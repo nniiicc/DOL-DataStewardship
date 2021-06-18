@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/DOL-DataStewardship/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "2667449257",
     "contents": "",
     "dirty": false,
     "created": 1624025799841.0,
@@ -16,11 +16,11 @@
         "scrollLine": "2"
     },
     "folds": "",
-    "lastKnownWriteTime": 1624025881,
+    "lastKnownWriteTime": 1624035333,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1624025881850,
+    "last_content_update": 1624035333928,
     "read_only": false,
     "read_only_alternatives": []
 }
