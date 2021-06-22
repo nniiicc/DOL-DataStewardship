@@ -25,7 +25,7 @@
 <meta name="author" content="Nic Weber">
 
 
-<meta name="date" content="2021-06-18">
+<meta name="date" content="2021-06-21">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -51,7 +51,6 @@
 
 
 
-<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
@@ -64,9 +63,6 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">DOL Data Stewarship</a></li>
-
-<li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#structure-of-course"><i class="fa fa-check"></i>Structure of course</a></li>
@@ -90,15 +86,13 @@
 </ul></li>
 <li class="chapter" data-level="2" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html"><i class="fa fa-check"></i><b>2</b> Data Stewarship - Fundamental Concepts</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html#metadata"><i class="fa fa-check"></i><b>2.1</b> Metadata</a>
-<ul>
-<li class="chapter" data-level="2.1.1" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html#data-documentation"><i class="fa fa-check"></i><b>2.1.1</b> Data Documentation</a></li>
-<li class="chapter" data-level="2.1.2" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html#data-management-and-data-management-plans"><i class="fa fa-check"></i><b>2.1.2</b> Data Management And Data Management Plans</a></li>
-<li class="chapter" data-level="2.1.3" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html#data-management-plan"><i class="fa fa-check"></i><b>2.1.3</b> Data Management Plan</a></li>
-<li class="chapter" data-level="2.1.4" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html#data-interviews"><i class="fa fa-check"></i><b>2.1.4</b> Data Interviews</a></li>
-<li class="chapter" data-level="2.1.5" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html#data-licensing-and-copyright"><i class="fa fa-check"></i><b>2.1.5</b> Data Licensing and Copyright</a></li>
-<li class="chapter" data-level="2.1.6" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html#reproducibility-and-replication-through-open-data"><i class="fa fa-check"></i><b>2.1.6</b> Reproducibility and Replication through Open Data</a></li>
-</ul></li>
+<li class="chapter" data-level="2.1" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html#metadata"><i class="fa fa-check"></i><b>2.1</b> Metadata</a></li>
+<li class="chapter" data-level="2.2" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html#data-documentation"><i class="fa fa-check"></i><b>2.2</b> Data Documentation</a></li>
+<li class="chapter" data-level="2.3" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html#data-management-and-data-management-plans"><i class="fa fa-check"></i><b>2.3</b> Data Management And Data Management Plans</a></li>
+<li class="chapter" data-level="2.4" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html#data-management-plan"><i class="fa fa-check"></i><b>2.4</b> Data Management Plan</a></li>
+<li class="chapter" data-level="2.5" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html#data-interviews"><i class="fa fa-check"></i><b>2.5</b> Data Interviews</a></li>
+<li class="chapter" data-level="2.6" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html#data-licensing-and-copyright"><i class="fa fa-check"></i><b>2.6</b> Data Licensing and Copyright</a></li>
+<li class="chapter" data-level="2.7" data-path="data-stewarship-fundamental-concepts.html"><a href="data-stewarship-fundamental-concepts.html#reproducibility-and-replication-through-open-data"><i class="fa fa-check"></i><b>2.7</b> Reproducibility and Replication through Open Data</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="data-stewarship-applications.html"><a href="data-stewarship-applications.html"><i class="fa fa-check"></i><b>3</b> Data Stewarship Applications</a>
 <ul>
@@ -127,9 +121,6 @@
 </ul></li>
 <li class="chapter" data-level="3.6" data-path="data-stewarship-applications.html"><a href="data-stewarship-applications.html#summary-1"><i class="fa fa-check"></i><b>3.6</b> Summary</a></li>
 </ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-
 </ul>
 
       </nav>
@@ -171,7 +162,7 @@ The point is that data need to have an application to become meaningful to a cus
 <p>Structure is often a helpful distinction in identifying types of data.</p>
 <p><strong>Structured data</strong> means that there is a predetermined form or logic to how information is arranged and presented to a user. A spreadsheet is an example of structured data - it has rows, columns and values This structure communicates to a user how the data values should be interpreted.</p>
 <p><strong>Unstructured data</strong> means that is no predetermined way in which data are supposed to be presented and used by a customer. Unstructured data for example can be emails, text messages, or other formal documents, videos or even audio recordings. As with much of data stewardship - real world data rarely falls exactly in one category or the other. Often data are semi-structured - which is when a set of data has a file format (such as XML or JSON) but no predefined form or scheme that explains for example what column of data should be. Below is a helpful figure - we can think about data as being structured or unstructured, as well as having semi-structures (such as XML or JSON). We will discuss these types of data as well metadata in the next section of the course.</p>
-<p><img src="images/DOL-RolesTypes.png" /></p>
+<p><img src="/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/DOL-RolesTypes.png" /></p>
 </div>
 <div id="roles-entity-vs-reference-data" class="section level3" number="1.1.2">
 <h3 number="1.1.2"><span class="header-section-number">1.1.2</span> Roles: Entity vs Reference Data</h3>
@@ -310,7 +301,7 @@ The National Science Board (2005) provides a helpful distinction between three t
 <h2 class="unnumbered">Example 1</h2>
 <p>Throughout the first chapter of this book we’ve discussed the idea that data are fundamentally relational - they mean different things to different customers at different points in time. To understand this relational nature of data it can be helpful to look at an example of how the same data are displayed to customers in different settings. These settings drive the stewarship of data given the needs of a customer that may vary over time.</p>
 <p>Below is a screenshot of the <a href="https://www.wsdot.wa.gov/data/tools/geoportal/?config=traffic">Washington Department of Transportation’s Traffic GeoData Portal</a>. This map displays realtime traffic count data from routes and interstates throughout Washington.</p>
-<p><img src="images/V2.png" /></p>
+<p><img src="/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/v2.png" /></p>
 <p>This traffic map is interactive - it allows a customer to select a route, or even a point on a route, where data traffic is collected and see the realtime estimates of things like “How many single unit trucks are on this route in the last hour.” This view of the data is useful for getting a quick overview of what the state of traffic is at any one moment in time. But, lets assume that instead of a quick overview of the realtime data an analyst at DOL wants access to the data that is powering this visualiztion. They may want this data for a variety of reasons - they may want to map all of the single use trucks on the road for June 1st and determine what percentage of singule use trucks are licsensed in the state of the WA. The WSDOT traffic geodata portal allows us to view this data by selecting a polygon and “printing” the data. If we choose to do this then we get an easy to manipulate data table that looks like the following:</p>
 <table>
 <colgroup>
@@ -494,10 +485,10 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-intro.Rmd",
-"text": "Edit"
+"link": null,
+"text": null
 },
-"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"download": null,
 "toc": {
 "collapse": "subsection"
 }

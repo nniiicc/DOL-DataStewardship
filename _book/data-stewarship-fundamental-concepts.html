@@ -25,7 +25,7 @@
 <meta name="author" content="Nic Weber">
 
 
-<meta name="date" content="2021-06-18">
+<meta name="date" content="2021-06-21">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -51,7 +51,6 @@
 
 
 
-<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
@@ -64,9 +63,6 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">DOL Data Stewarship</a></li>
-
-<li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#structure-of-course"><i class="fa fa-check"></i>Structure of course</a></li>
@@ -124,9 +120,6 @@
 </ul></li>
 <li class="chapter" data-level="3.6" data-path="data-stewarship-applications.html"><a href="data-stewarship-applications.html#summary-1"><i class="fa fa-check"></i><b>3.6</b> Summary</a></li>
 </ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-
 </ul>
 
       </nav>
@@ -300,7 +293,7 @@ Dublin Core is another metadata standard that is used broadly for describing ima
 <p>Data management is active - that is, it requires purposeful interactions with both data creators and data users, as well as stewardship of the data itself (cleaning, applying standards, updating data, etc).</p>
 <p>Simply - we can think of data in an organizational context as having three layers: The data itself, the documentation (which we discussed above) and its storage. We will discuss storage in depth in the final chapter of this book. For now, its good to have a working mental model of what data management applies to - all three layers of the organizational context in which data are collected, described, and stored.</p>
 <p>In the definition of data management I referred to what might seem like a complex “lifecycle” of data. A lifecycle model is meant to be a conceptual model that spells out, broadly, the different stages that data might go through and the various people that will be involved in each stage. A lifecyle model doesn’t necessarily have a clear start or finishing point - the idea is that data might move through or “cycle” through each of these stages. As data stewards there is an important role to play each stage of the lifecycle - At the point of collection all the way through to the preservation or destruction of data. Below is a helpful depiction of the most basic stages of a data management lifecycle.</p>
-<p><img src="images/lifecycle.png" />
+<p><img src="/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/lifecycle.png" />
 ## Data Management Plan
 A data management plan (DMP) is a written document that describes how data will be managed at each stage of a data lifecycle. As a data steward serving internal DOL stakeholders this might include asking a client how do you expect to acquire or generate during the course of a project, how will you manage, describe, analyze, and store those data during the project, and what mechanisms will you use at the end of your project to share and preserve your data? DMPs are created by data producers with consultation of data stewards. Ideally a DMP is created before data collection begins, but oftentimes it is necessary to develop data management plans during or even at the conclusion of a project. Although an ideal data management plan documents each stage in the lifecycle above, it must include at least four elements:</p>
 <ul>
@@ -324,7 +317,7 @@ A data management plan (DMP) is a written document that describes how data will 
 <li>Recall is related to the total amount of information returned - Did we retrieve all the information or data that a system had relevant to our query?</li>
 <li>Precision is about the accuracy of the returned results - Did the information system give us back a subset of the relevant information that is most useful to our query? (see Figure 1 for a visual example)</li>
 </ul>
-<p><img src="images/precision-recall.png" /></p>
+<p><img src="/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/precision-recall.png" /></p>
 <p>Recall and precision are both useful for a data interview. Sometimes what we desire, especially in exploratory searching, is to cast a broad net and find all of the information that might exist about a topic. In this case, recall will be a helpful mental model to judge relevancy.</p>
 <p>If, however, we want to retrieve a particular type of information (sometimes called a ‘known item’ search) than precision will be a much better model to judge whether or not an information system retrieved the item we were seeking. Knowing in advance what kind of search is being conducted, and then building a search strategy with the correct mental model in place is the key to successful data interviews.</p>
 <p>As a data steward, it will be rare that you encounter a user who has not already done some searching and come up empty. It is much more likely that a user will come to you having been frustrated by not finding an answer to their question, or the data they expect to already exist. In a library settings these types of interviews are often called a “reference interview” and helpfully the field has evolved some of the traditional techniques to be applicable to data users or customers. The existing resources on “data reference interviews” can range from very formal - such as this worksheet used for scientific data to more simple and straightforward models for general data users. All of these approaches share some basic things in common - helping a user understand the question they are trying to answer, asking questions about what resources might accessible and what might actually be useful, and then following up with the user to ensure that they have a match between expectation and reality. Below, is a breakdown of this process into just four simple steps to follow during a data interview with a customer:</p>
@@ -455,10 +448,10 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-literature.Rmd",
-"text": "Edit"
+"link": null,
+"text": null
 },
-"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"download": null,
 "toc": {
 "collapse": "subsection"
 }
