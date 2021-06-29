@@ -142,7 +142,7 @@ In data interviews - where a user is seeking a piece of structured information a
 - Recall is related to the total amount of information returned -  Did we retrieve all the information or data that a system had relevant to our query? 
 - Precision is about the accuracy of the returned results - Did the information system give us back a subset of the relevant information that is most useful to our query? (see Figure 1 for a visual example) 
 
-![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/precision-recall.png)
+![](https://raw.githubusercontent.com/nniiicc/DOL-DataStewardship/master/images/precision-recall.png)
 
 Recall and precision are both useful for a data interview. Sometimes what we desire, especially in exploratory searching, is to cast a broad net and find all of the information that might exist about a topic. In this case, recall will be a helpful mental model to judge relevancy. 
 
@@ -189,6 +189,7 @@ Regardless of the success of open government in order to truly achieve the goals
 “Agencies must apply open licenses, in consultation with the best practices found in Project Open Data, to information as it is collected or created so that if data are made public there are no restrictions on copying, publishing, distributing, transmitting, adapting, or otherwise using the information for non-commercial or for commercial purposes.”
 
 Common licenses used for open data include the following:
+
 - Open Data Commons Attribution License (ODC-By) v1.0 https://opendatacommons.org/licenses/by/1-0/ 
 - Open Data Commons Public Domain Dedication and License (PDDL) https://opendatacommons.org/licenses/pddl/1-0/ 
 -  Creative Commons Zero Public Domain Dedication (CC0), e.g. "license":"https://creativecommons.org/publicdomain/zero/1.0/"
