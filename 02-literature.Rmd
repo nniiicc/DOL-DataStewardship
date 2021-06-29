@@ -189,6 +189,7 @@ Regardless of the success of open government in order to truly achieve the goals
 “Agencies must apply open licenses, in consultation with the best practices found in Project Open Data, to information as it is collected or created so that if data are made public there are no restrictions on copying, publishing, distributing, transmitting, adapting, or otherwise using the information for non-commercial or for commercial purposes.”
 
 Common licenses used for open data include the following:
+
 - Open Data Commons Attribution License (ODC-By) v1.0 https://opendatacommons.org/licenses/by/1-0/ 
 - Open Data Commons Public Domain Dedication and License (PDDL) https://opendatacommons.org/licenses/pddl/1-0/ 
 -  Creative Commons Zero Public Domain Dedication (CC0), e.g. "license":"https://creativecommons.org/publicdomain/zero/1.0/"

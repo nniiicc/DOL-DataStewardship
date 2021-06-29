@@ -1,26 +1,26 @@
 {
-    "id": "6B341B9B",
+    "id": "FA2108D4",
     "path": "~/Documents/GitHub/DOL-DataStewardship/01-intro.Rmd",
     "project_path": "01-intro.Rmd",
     "type": "r_markdown",
-    "hash": "3444500968",
+    "hash": "3236522993",
     "contents": "",
-    "dirty": true,
-    "created": 1622937561526.0,
+    "dirty": false,
+    "created": 1624022707807.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "46,257",
-        "scrollLine": "45"
+        "cursorPosition": "161,66",
+        "scrollLine": "156"
     },
     "folds": "",
-    "lastKnownWriteTime": 1623080988,
+    "lastKnownWriteTime": 1624035322,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1623080988314,
+    "last_content_update": 1624035322049,
     "read_only": false,
     "read_only_alternatives": []
 }
