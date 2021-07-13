@@ -125,19 +125,19 @@ The last 20 years have seen data increasingly published to the web as structured
 
 Data repositories are simply a series of technical “layers” or a “stack” of technologies - each layer consists of a set of services and interfaces that allow data to be reliably preserved and published for reuse. The layers of a repository are decribed, incrimentally, below.
 
-![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/hardware.png)
+![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/_book/images/hardware.png)
 
 Hardware: The hardware layer of a repository consists of technologies that practically store, and serve data to a software layer. The hardware layer of a repository practically, at minimum, consists of a set of servers (hosting databases, websites, etc) and a set of backup storage environments such as spinning disks or tape-based storage. The hardware layer is closest to what we described in the Introduction chapter as the “Physical” layer of a computing system (hence the “hard” in hardware).
 
-![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/software.png)
+![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/_book/images/software.png)
 
 Software: The software layer of a repository consists of code that practically runs a web-interface, and provides APIs that connect different servers to one another so that data can be reliably retrieved, and served to end-users. The software layer presents a graphic user interface to “customers” of the data repository and allows for ease of access. This software layer also provides a graphic user interface for curators who manage deposits to a data repository, and allows for metadata and other descriptive elements to be attached to data before it is ingested into a long-term storage environment. Often the software layer of a repository is described as a “repository framework” (e.g. Dataverse, CKAN, or DSpace) - this simply means the different software components that are particularly configured for data access and preservation (more on this below). The software and hardware layer practically carry out preservation and long-term storage of data.
 
-![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/policy.png)
+![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/_book/images/policy.png)
 
 Policy: The policy layer of a repository consists of curation services such as deposit, ingest, metadata creation, and publication of data to the web. The policy layer provides specific rules for how these services are to be carried out, and specifies who is in charge of what practical functions of data publication and preservation.
 
-![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/repository.png)
+![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/_book/images/repository.png)
 Governance: The governance layer of a repository consists of institutional guidelines that specify **how** data should be managed over the long term, the rights of data producers and consumers, and the intellectual property claims that can be made by any institutional actor (as we discussed in chapter 1)
 
 Putting these layers together we can begin to understand how a generic term like "repository" or "data portal" is actually a much more complex sociotechnical arrangement of software, hardware, policy, and governance. Each of these layers necessarily supports the others, and are necessary for a well-functioning and sustainable digital storage environment where data can be discovered, accessed, and contributed. In thinking about the different repositories that will be accessible to and used in a data stewardship role, this simply layered model can help unpack the people, the rules, and the resources that make up any one data repository. 
@@ -206,7 +206,7 @@ Data may also contain categories or classifications that are neither discrete no
 
 These are distinctions in the type of accident - they don’t have discrete or continuous values that can be easily visualized. Thus, it may be useful to use the categorical values together with discrete and continuous variable data values (e.g. image below) 
 
-![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/v1.png)
+![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/_book/images/v1.png)
 
 3. **Determine Type of Variable Relationship** - If data visualization, at its core, is about clearly communicating relationships between variables in our data then it is worth knowing the types of common relationships that might occur, and what types of visualizations are best for communicating with each type. The three most common types of variable relationships that will be visualized are:
 

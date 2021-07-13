@@ -32,3 +32,4 @@ machine-learning
 data-visualization
 principles-of-data-visualization
 summary-1
+data-management-plan

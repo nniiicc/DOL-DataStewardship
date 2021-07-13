@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>DA State Department of Licensing: Data Stewarship</title>
-  <meta name="description" content="A training guide for WA State DOL Data Stewards">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 Data Stewardship - Fundamental Concepts | DA State Department of Licensing: Data Stewarship</title>
+  <meta name="description" content="A training guide for WA State DOL Data Stewards" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="DA State Department of Licensing: Data Stewarship" />
+  <meta property="og:title" content="1 Data Stewardship - Fundamental Concepts | DA State Department of Licensing: Data Stewarship" />
   <meta property="og:type" content="book" />
   
   
@@ -17,36 +16,43 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="DA State Department of Licensing: Data Stewarship" />
+  <meta name="twitter:title" content="1 Data Stewardship - Fundamental Concepts | DA State Department of Licensing: Data Stewarship" />
   
   <meta name="twitter:description" content="A training guide for WA State DOL Data Stewards" />
   
 
-<meta name="author" content="Nic Weber">
+<meta name="author" content="Nic Weber" />
 
 
-<meta name="date" content="2021-06-21">
+<meta name="date" content="2021-07-13" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html">
-<link rel="next" href="data-stewarship-fundamental-concepts.html">
+<link rel="prev" href="index.html"/>
+<link rel="next" href="data-stewarship-fundamental-concepts.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
 
 
 
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
@@ -139,13 +145,10 @@
 
             <section class="normal" id="section-">
 <div id="data-stewardship---fundamental-concepts" class="section level1" number="1">
-<h1 number="1"><span class="header-section-number">1</span> Data Stewardship - Fundamental Concepts</h1>
+<h1><span class="header-section-number">1</span> Data Stewardship - Fundamental Concepts</h1>
 <p>This first chapter is meant to introduce basic concepts related to data stewardship, and working with data more broadly in the context of the public sector. We begin by first unpacking the concept of data and explaining how to approach various contextual ambiguities about what constitutes data. We then review some basic concepts related to data stewarship such as management of data and data quality. We wrap up this introduction by discussing or introducing the concept of data governance and data ethics.</p>
-<p><strong>Data as a Relational Concept</strong>
-Successfully working with and offering services around data is often as much about domain knowledge (e.g. what do stakeholders of DOL know as experts) as it is about having a precise or clear language for describing data.
-To begin the curriculum, we will develop some working definitions of basic concepts - like data, and data stewardship. Having clarity on these basic concepts will allow us to not only communicate with others more effectively, but it will also allow us to quickly move from the basics to more advanced topics in this curriculum.</p>
 <div id="defining-data" class="section level2" number="1.1">
-<h2 number="1.1"><span class="header-section-number">1.1</span> Defining Data</h2>
+<h2><span class="header-section-number">1.1</span> Defining Data</h2>
 <p>The Department of Licensing defines data as “Numbers and facts that have not been grouped or analyzed. (Data that is grouped becomes statistics. Data that is analyzed becomes data analysis.) This includes numbers and facts in electronic records, paper records, emails, text messages, recordings, and images.” (Policy Admin 1.7.7)</p>
 <p>This working definition will be helpful in understanding what the Department of Licensing considers data and how it is to be successfully managed over time. This definition also draws a clear distinction between a type of information object (e.g. electronic records, paper records, text messages, etc) and the role that the information object is supposed to play (e.g. grouped numbers become statistical data, analyzed information objects become data analysis, etc).
 The point is that data need to have an application to become meaningful to a customer, but in the abstract data are really just information objects with potential for use in many different contexts.</p>
@@ -158,14 +161,14 @@ The point is that data need to have an application to become meaningful to a cus
 <p>But, this tabular data (type) might be evidence of some real world example- it might be set of species occurrence records, the precipitation and temperature of a particular place, the number of vehicles that pass through a certain point at a certain time, or even a vehicle registration number. These are different roles that data can play. Without context these are just numbers or files (information objects) that are waiting to be used as evidence by a data stakeholder (such as the definition offered by DOL above).</p>
 <p>This evidential role of data can shift and change depending on who is using the data, and for what purpose. <strong>Thinking about data as having roles and types helps us as data stewards to think about what exactly a stakeholder wants and needs.</strong> If we understand what role the data is supposed to play we can better find the right type of data for a customer or stakeholder.</p>
 <div id="types-structured-vs-unstructured-data" class="section level3" number="1.1.1">
-<h3 number="1.1.1"><span class="header-section-number">1.1.1</span> Types: Structured vs Unstructured Data</h3>
+<h3><span class="header-section-number">1.1.1</span> Types: Structured vs Unstructured Data</h3>
 <p>Structure is often a helpful distinction in identifying types of data.</p>
 <p><strong>Structured data</strong> means that there is a predetermined form or logic to how information is arranged and presented to a user. A spreadsheet is an example of structured data - it has rows, columns and values This structure communicates to a user how the data values should be interpreted.</p>
 <p><strong>Unstructured data</strong> means that is no predetermined way in which data are supposed to be presented and used by a customer. Unstructured data for example can be emails, text messages, or other formal documents, videos or even audio recordings. As with much of data stewardship - real world data rarely falls exactly in one category or the other. Often data are semi-structured - which is when a set of data has a file format (such as XML or JSON) but no predefined form or scheme that explains for example what column of data should be. Below is a helpful figure - we can think about data as being structured or unstructured, as well as having semi-structures (such as XML or JSON). We will discuss these types of data as well metadata in the next section of the course.</p>
-<p><img src="/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/DOL-RolesTypes.png" /></p>
+<p><img src="_book/images/DOL-RolesTypes.png" /></p>
 </div>
 <div id="roles-entity-vs-reference-data" class="section level3" number="1.1.2">
-<h3 number="1.1.2"><span class="header-section-number">1.1.2</span> Roles: Entity vs Reference Data</h3>
+<h3><span class="header-section-number">1.1.2</span> Roles: Entity vs Reference Data</h3>
 <p>The Department of Licensing, like any complex organization, has a variety of data that it collects and manages over time to execute business functions. DOL data can serve a variety of purposes, and these “data roles” vary not just by the type of data that are collected and managed, but how they are used. This is described succinctly by DOL in the following way:<br />
 DOL has a diverse collection of applications to support its operational needs. There are many common data elements across these applications that are currently being defined and used separately and inconsistently. While this usually has no impact on the operation of the individual applications, it creates problems when trying to match and accumulate data from multiple systems for analysis and forecasting.
 A helpful way to think about the roles that data plays at DOL is that they can be either as reference data or entity data.</p>
@@ -181,7 +184,7 @@ This data tends to be complex in structure and change very frequently.</p></li>
 </div>
 </div>
 <div id="categories-of-data" class="section level2" number="1.2">
-<h2 number="1.2"><span class="header-section-number">1.2</span> Categories of data</h2>
+<h2><span class="header-section-number">1.2</span> Categories of data</h2>
 <p>Thus far, we’ve described data by types and roles that are pre-established based on some aspect of the data or its use. Another way to differentiate the roles that data might play within an organization is by categorizing data with respect to its content.</p>
 <p>DOL has helpful developed a four part categorization that includes the following types of data content:</p>
 <table>
@@ -217,7 +220,7 @@ This data tends to be complex in structure and change very frequently.</p></li>
 <p>These categories are essential to understanding not only how data should be governed (discussed in depth below), but also for identifying the role that data might appropriately play. For example, if a customer requests Category 4 data, as a steward of DOL we would need to ensure that the customer has proper credentials to accept this data, and verify that the data is transferred to the customer in a secure and reliable manner.</p>
 </div>
 <div id="data-collections" class="section level2" number="1.3">
-<h2 number="1.3"><span class="header-section-number">1.3</span> Data Collections</h2>
+<h2><span class="header-section-number">1.3</span> Data Collections</h2>
 <p>Another helpful distinction to draw is whether data are standalone products, or collections of multiple data sources that are of value to a stakeholder. For example the WA State Department of Transportation collects traffic data from each Route or Highway in the state. Individually a data source may be just about one specific Highway, but in total all data about all Highways in Washington constitute a collection of data.
 The National Science Board (2005) provides a helpful distinction between three types of data collections:</p>
 <ul>
@@ -227,11 +230,11 @@ The National Science Board (2005) provides a helpful distinction between three t
 </ul>
 </div>
 <div id="fair-data" class="section level2" number="1.4">
-<h2 number="1.4"><span class="header-section-number">1.4</span> FAIR Data</h2>
+<h2><span class="header-section-number">1.4</span> FAIR Data</h2>
 <p>An emerging shorthand description for open data - that is applicable to any sector - is the concept of F.A.I.R. FAIR data should be Findable, Accessible, Interoperable, and Reusable. We will discuss this concept in a bit more depth throughout this course. But, having this shorthand definition of what we try to achieve in doing data stewardship is a helpful reminder for the steps needed to make data truly accessible over the long term.</p>
 </div>
 <div id="data-stewardship" class="section level2" number="1.5">
-<h2 number="1.5"><span class="header-section-number">1.5</span> Data Stewardship</h2>
+<h2><span class="header-section-number">1.5</span> Data Stewardship</h2>
 <p>As a data steward your job will include a variety of department specific tasks, but more generally stewardship is used to describe “accountability and responsibility for data and processes that ensure effective control and use of data assets. Stewardship can be formalized through job titles and descriptions, or it can be a less formal function driven by people trying to help an organization get value from its data”</p>
 <p>Some general tasks that might be included in data stewardship:
 - Creating and managing metadata.
@@ -241,11 +244,11 @@ The National Science Board (2005) provides a helpful distinction between three t
 - Setting and managing guidelines around data access.</p>
 </div>
 <div id="data-quality" class="section level2" number="1.6">
-<h2 number="1.6"><span class="header-section-number">1.6</span> Data Quality</h2>
+<h2><span class="header-section-number">1.6</span> Data Quality</h2>
 <p>From the ISO 8000 definition we assume data quality are “…the degree to which a set of characteristics of data fulfills stated requirements.” In simpler terms data quality is the degree to which a set of data or metadata are fit for use. Examples of data quality characteristics include completeness, validity, accuracy, consistency, availability and timeliness. In the final chapter of this book we will discuss strategies and techniques for applying data quality standards to DOL data.</p>
 </div>
 <div id="data-governance" class="section level2" number="1.7">
-<h2 number="1.7"><span class="header-section-number">1.7</span> Data Governance</h2>
+<h2><span class="header-section-number">1.7</span> Data Governance</h2>
 <p>Data Governance is a collection of practices and processes which help to ensure the formal management of data assets within an organization. Data governance includes not just rules or regulations, but also clear definitions about what data management means in a specific organizational context and how data quality, security, and preservation should be carried out (e.g. through stewardship). While not exhaustive most data governance models will include some combination of the following elements:</p>
 <ul>
 <li>Authority and Control - Who will make decisions, and where are decision making processes documented, for planning, monitoring, and enforcing data management?</li>
@@ -266,7 +269,7 @@ The National Science Board (2005) provides a helpful distinction between three t
 <p>Data Governance in Washington State: The OneWashington project is the largest data and technology project is recent memory for the State of Washington. Between 2021 and 2027 it will restructure and replace almost all administrative systems with an Enterprise Resource Planning tool, and will reorder all the data those various systems contain. The project has published a <a href="https://ofm.wa.gov/sites/default/files/public/onewa/OneWa_Data_Governance.pdf">Data Governance Strategy document</a> that provides some insight into data governance in practice for the state of Washington.</p>
 </div>
 <div id="data-ethics" class="section level2" number="1.8">
-<h2 number="1.8"><span class="header-section-number">1.8</span> Data Ethics</h2>
+<h2><span class="header-section-number">1.8</span> Data Ethics</h2>
 <p>Ethics can be practically framed as “the study of the general nature of morals and of the specific moral judgments or choices to be made by a person” (Burns, 2012). This definition situates ethics as a matter of individual choice, but of course the choices we make as individuals have broad impacts on the communities we are part of, serve, and wish to see flourish. That is, ethics is often practically framed as the result of individual choices and actions, but ethics also encompasses the implicit and explicit values of an institution, community of practice, or even group of data stakeholders.</p>
 <p>The relationship between individual choice and collective action is particularly relevant for data stewardship where you will need to collaboratively work to provide regular and unfettered access to resources needed to conduct research, develop guidelines or regulations that govern ethical behavior, and practically implement standards that encode or formalize these rules in a data governance model.</p>
 <p>It is important to acknowledge at the outset that data ethics, morals and judgements, whether individual or collective, don’t arise from the ether - they are grounded in beliefs about what is right, just, or serves the greater good given an alternative set of choices. The ethical dilemmas faced by a community of practitioners are often about deciding what is right, how is justice enacted and preserved, or what choices we make can produce the greatest good for the communities on whose behalf we work.</p>
@@ -293,15 +296,15 @@ The National Science Board (2005) provides a helpful distinction between three t
 </ul>
 </div>
 <div id="summary" class="section level2" number="1.9">
-<h2 number="1.9"><span class="header-section-number">1.9</span> Summary</h2>
+<h2><span class="header-section-number">1.9</span> Summary</h2>
 <p>In this chapter we have introduced a number of important concepts for data stewardship including how data might be differentiated based on its type or its role - types of data are based on structure, and these types are usually fixed and unchanging whereas the role of data, such as entity data or reference data, can vary given the application or context of how data are used. We also covered four broad categories that can be used to describe data that are managed in DOL - these include public information, sensitive information, confidential information, and confidential information requiring specific handling. These categories help to further differentiate data by the role they might play for analysis by a customer, or in data governance that attempts to systematically create rules for data access. We also discussed some principles that govern ethical handling of data, including ownership of data, privacy and consent.</p>
 
 </div>
 <div id="example-1" class="section level2 unnumbered rmdcaution">
-<h2 class="unnumbered">Example 1</h2>
+<h2>Example 1</h2>
 <p>Throughout the first chapter of this book we’ve discussed the idea that data are fundamentally relational - they mean different things to different customers at different points in time. To understand this relational nature of data it can be helpful to look at an example of how the same data are displayed to customers in different settings. These settings drive the stewarship of data given the needs of a customer that may vary over time.</p>
 <p>Below is a screenshot of the <a href="https://www.wsdot.wa.gov/data/tools/geoportal/?config=traffic">Washington Department of Transportation’s Traffic GeoData Portal</a>. This map displays realtime traffic count data from routes and interstates throughout Washington.</p>
-<p><img src="/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/v2.png" /></p>
+<p><img src="_book/images/V2.png" /></p>
 <p>This traffic map is interactive - it allows a customer to select a route, or even a point on a route, where data traffic is collected and see the realtime estimates of things like “How many single unit trucks are on this route in the last hour.” This view of the data is useful for getting a quick overview of what the state of traffic is at any one moment in time. But, lets assume that instead of a quick overview of the realtime data an analyst at DOL wants access to the data that is powering this visualiztion. They may want this data for a variety of reasons - they may want to map all of the single use trucks on the road for June 1st and determine what percentage of singule use trucks are licsensed in the state of the WA. The WSDOT traffic geodata portal allows us to view this data by selecting a polygon and “printing” the data. If we choose to do this then we get an easy to manipulate data table that looks like the following:</p>
 <table>
 <colgroup>
@@ -460,11 +463,13 @@ The National Science Board (2005) provides a helpful distinction between three t
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -472,12 +477,12 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -485,6 +490,14 @@ gitbook.start({
 "size": 2
 },
 "edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },

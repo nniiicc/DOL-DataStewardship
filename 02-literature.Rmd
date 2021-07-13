@@ -115,7 +115,7 @@ Simply - we can think of data in an organizational context as having three layer
 
 In the definition of data management I referred to what might seem like a complex “lifecycle” of data. A lifecycle model is meant to be a conceptual model that spells out, broadly, the different stages that data might go through and the various people that will be involved in each stage. A lifecyle model doesn’t necessarily have a clear start or finishing point - the idea is that data might move through or “cycle” through each of these stages. As data stewards there is an important role to play each stage of the lifecycle - At the point of collection all the way through to the preservation or destruction of data.  Below is a helpful depiction of the most basic stages of a data management lifecycle. 
 
-![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/lifecycle.png)
+![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/_book/images/DOL-RolesTypes.png)
 ## Data Management Plan 
 A data management plan (DMP) is a written document that describes how data will be managed at each stage of a data lifecycle. As a data steward serving internal DOL stakeholders this might include asking a client how do you expect to acquire or generate during the course of a project, how will you manage, describe, analyze, and store those data during the project, and what mechanisms will you use at the end of your project to share and preserve your data? DMPs are created by data producers with consultation of data stewards. Ideally a DMP is created before data collection begins, but oftentimes it is necessary to develop data management plans during or even at the conclusion of a project.  Although an ideal data management plan documents each stage in the lifecycle above, it must include at least four elements: 
 
@@ -142,7 +142,7 @@ In data interviews - where a user is seeking a piece of structured information a
 - Recall is related to the total amount of information returned -  Did we retrieve all the information or data that a system had relevant to our query? 
 - Precision is about the accuracy of the returned results - Did the information system give us back a subset of the relevant information that is most useful to our query? (see Figure 1 for a visual example) 
 
-![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/precision-recall.png)
+![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/_book/images/precision-recall.png)
 
 Recall and precision are both useful for a data interview. Sometimes what we desire, especially in exploratory searching, is to cast a broad net and find all of the information that might exist about a topic. In this case, recall will be a helpful mental model to judge relevancy. 
 

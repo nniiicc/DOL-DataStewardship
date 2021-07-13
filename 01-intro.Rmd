@@ -2,10 +2,6 @@
 
 This first chapter is meant to introduce basic concepts related to data stewardship, and working with data more broadly in the context of the public sector. We begin by first unpacking the concept of data and explaining how to approach various contextual ambiguities about what constitutes data. We then review some basic concepts related to data stewarship such as management of data and data quality. We wrap up this introduction by discussing or introducing the concept of data governance and data ethics. 
 
-**Data as a Relational Concept**
-Successfully working with and offering services around data is often as much about domain knowledge (e.g. what do stakeholders of DOL know as experts) as it is about having a precise or clear language for describing data. 
-To begin the curriculum, we will develop some working definitions of basic concepts - like data, and data stewardship. Having clarity on these basic concepts will allow us to not only communicate with others more effectively, but it will also allow us to quickly move from the basics to more advanced topics in this curriculum. 
-
 ## Defining Data 
 The Department of Licensing defines data as “Numbers and facts that have not been grouped or analyzed. (Data that is grouped becomes statistics. Data that is analyzed becomes data analysis.) This includes numbers and facts in electronic records, paper records, emails, text messages, recordings, and images.”  (Policy Admin 1.7.7) 
 
@@ -31,7 +27,7 @@ Structure is often a helpful distinction in identifying types of data.
 **Unstructured data** means that is no predetermined way in which data are supposed to be presented and used by a customer. Unstructured data for example can be emails, text messages, or other formal documents, videos or even audio recordings. As with much of data stewardship - real world data rarely falls exactly in one category or the other. Often data are semi-structured - which is when a set of data has a file format (such as XML or JSON) but no predefined form or scheme that explains for example what column of data should be.  Below is a helpful figure - we can think about data as being structured or unstructured, as well as having semi-structures (such as XML or JSON). We will discuss these types of data as well metadata in the next section of the course. 
 
 
-![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/DOL-RolesTypes.png)
+![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/_book/images/DOL-RolesTypes.png)
 
 
 ### Roles: Entity vs Reference Data
@@ -157,7 +153,7 @@ Throughout the first chapter of this book we've discussed the idea that data are
 
 Below is a screenshot of the [Washington Department of Transportation's Traffic GeoData Portal](https://www.wsdot.wa.gov/data/tools/geoportal/?config=traffic). This map displays realtime traffic count data from routes and interstates throughout Washington. 
 
-![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/images/v2.png)
+![](/Users/nmweber/Documents/GitHub/DOL-DataStewardship/_book/images/v2.png)
 
 This traffic map is interactive - it allows a customer to select a route, or even a point on a route, where data traffic is collected and see the realtime estimates of things like "How many single unit trucks are on this route in the last hour". This view of the data is useful for getting a quick overview of what the state of traffic is at any one moment in time. But, lets assume that instead of a quick overview of the realtime data an analyst at DOL wants access to the data that is powering this visualiztion. They may want this data for a variety of reasons - they may want to map all of the single use trucks on the road for June 1st and determine what percentage of singule use trucks are licsensed in the state of the WA. The WSDOT traffic geodata portal allows us to view this data by selecting a polygon and "printing" the data. If we choose to do this then we get an easy to manipulate data table that looks like the following: 
 
