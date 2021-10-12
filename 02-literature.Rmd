@@ -6,7 +6,7 @@ Library and Information Science (LIS) is a field that is concerned primarily wit
 
 ## Metadata
 
-Metadata is often described as “data about data” - in some ways this is true, but this simple definition tends to obscure as much as it reveals about the important of data documentation. 
+Metadata is often described as “data about data” ... in some ways this is true, but this simple definition tends to obscure as much as it reveals about the important of data documentation. 
 
 Metadata is most simply a set of standardized attribute-value pairs that provide contextual information about an object or artifact playing the role of Data. In the following sections we will try to unpack concepts like attributes and values, and how they relate to descriptions of data. Perhaps the best way to do this is introducing some features of metadata as it is typically used to organize, describe, and provide supplementary information about data. These features (such as class, sub-class, attribute, or instance) can apply to data at various levels of "granularity" or the level of specificity that goes from general (e.g a type of data) to concrete example (e.g. a dataset that lives on your harddrive and has the exact tittle `mydata101.csv`). Here are features that are consistent across most metadata applications: 
 

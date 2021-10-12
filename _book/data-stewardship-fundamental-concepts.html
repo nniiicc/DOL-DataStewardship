@@ -24,7 +24,7 @@
 <meta name="author" content="Nic Weber" />
 
 
-<meta name="date" content="2021-07-13" />
+<meta name="date" content="2021-10-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -108,11 +108,7 @@
 <li class="chapter" data-level="3.1.2" data-path="data-stewarship-applications.html"><a href="data-stewarship-applications.html#metadata-quality"><i class="fa fa-check"></i><b>3.1.2</b> Metadata Quality</a></li>
 <li class="chapter" data-level="3.1.3" data-path="data-stewarship-applications.html"><a href="data-stewarship-applications.html#data-and-metadata-quality-in-practice"><i class="fa fa-check"></i><b>3.1.3</b> Data and Metadata Quality in Practice</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="data-stewarship-applications.html"><a href="data-stewarship-applications.html#data-metadata-cleaning"><i class="fa fa-check"></i><b>3.2</b> Data &amp; Metadata Cleaning</a>
-<ul>
-<li class="chapter" data-level="3.2.1" data-path="data-stewarship-applications.html"><a href="data-stewarship-applications.html#data-cleaning"><i class="fa fa-check"></i><b>3.2.1</b> Data Cleaning</a></li>
-<li class="chapter" data-level="3.2.2" data-path="data-stewarship-applications.html"><a href="data-stewarship-applications.html#metadata-cleaning"><i class="fa fa-check"></i><b>3.2.2</b> Metadata Cleaning</a></li>
-</ul></li>
+<li class="chapter" data-level="3.2" data-path="data-stewarship-applications.html"><a href="data-stewarship-applications.html#data-and-metadata-cleaning"><i class="fa fa-check"></i><b>3.2</b> Data and Metadata Cleaning</a></li>
 <li class="chapter" data-level="3.3" data-path="data-stewarship-applications.html"><a href="data-stewarship-applications.html#data-repositories"><i class="fa fa-check"></i><b>3.3</b> Data Repositories</a>
 <ul>
 <li class="chapter" data-level="3.3.1" data-path="data-stewarship-applications.html"><a href="data-stewarship-applications.html#layers-of-a-data-repository"><i class="fa fa-check"></i><b>3.3.1</b> Layers of a Data Repository</a></li>
@@ -150,15 +146,14 @@
 <div id="defining-data" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Defining Data</h2>
 <p>The Department of Licensing defines data as “Numbers and facts that have not been grouped or analyzed. (Data that is grouped becomes statistics. Data that is analyzed becomes data analysis.) This includes numbers and facts in electronic records, paper records, emails, text messages, recordings, and images.” (Policy Admin 1.7.7)</p>
-<p>This working definition will be helpful in understanding what the Department of Licensing considers data and how it is to be successfully managed over time. This definition also draws a clear distinction between a type of information object (e.g. electronic records, paper records, text messages, etc) and the role that the information object is supposed to play (e.g. grouped numbers become statistical data, analyzed information objects become data analysis, etc).
-The point is that data need to have an application to become meaningful to a customer, but in the abstract data are really just information objects with potential for use in many different contexts.</p>
+<p>This working definition will be helpful in understanding what the Department of Licensing considers data and how it is to be successfully managed over time. This definition also draws a clear distinction between a type of information object (e.g. electronic records, paper records, text messages, etc) and the role that the information object is supposed to play (e.g. grouped numbers become statistical data, analyzed information objects become data analysis, etc). The point is that data need to have an application to become meaningful to a customer, but in the abstract data are really just information objects with potential for use in many different contexts.</p>
 <p>It is often overwhelming to think of all the different ways that data may be used. Instead, I think it is more helpful to think about data as having type and role distinctions - A type is rigid (such as a format) and a role is fluid (it can change given a context). A simple example outside the context of data will help make this clear:</p>
 <ul>
 <li>Jay Inslee is a person. This is a type.</li>
 <li>Jay Inslee is the Governor of Washington State. This is a role. He will play this role for a fixed amount of time. After his term as governor expires he will cease to play this role. But, he will still be a person regardless of whether or not he is the Governor of Washington State.</li>
 </ul>
 <p>Data have similar types and roles - A tabular dataset such as a CSV or Excel document will have a type of structure (rows, columns, and values). Unless we take some purposeful action to transform this data it will remain tabular as a type of data.</p>
-<p>But, this tabular data (type) might be evidence of some real world example- it might be set of species occurrence records, the precipitation and temperature of a particular place, the number of vehicles that pass through a certain point at a certain time, or even a vehicle registration number. These are different roles that data can play. Without context these are just numbers or files (information objects) that are waiting to be used as evidence by a data stakeholder (such as the definition offered by DOL above).</p>
+<p>But, this tabular data (type) might be evidence of some real world example- it might be a set of species occurrence records, the precipitation and temperature of a particular place, the number of vehicles that pass through a certain point at a certain time, or even a vehicle registration number. These are different roles that data can play. Without context these are just numbers or files (information objects) that are waiting to be used as evidence by a data stakeholder (such as the definition offered by DOL above).</p>
 <p>This evidential role of data can shift and change depending on who is using the data, and for what purpose. <strong>Thinking about data as having roles and types helps us as data stewards to think about what exactly a stakeholder wants and needs.</strong> If we understand what role the data is supposed to play we can better find the right type of data for a customer or stakeholder.</p>
 <div id="types-structured-vs-unstructured-data" class="section level3" number="1.1.1">
 <h3><span class="header-section-number">1.1.1</span> Types: Structured vs Unstructured Data</h3>
@@ -169,9 +164,11 @@ The point is that data need to have an application to become meaningful to a cus
 </div>
 <div id="roles-entity-vs-reference-data" class="section level3" number="1.1.2">
 <h3><span class="header-section-number">1.1.2</span> Roles: Entity vs Reference Data</h3>
-<p>The Department of Licensing, like any complex organization, has a variety of data that it collects and manages over time to execute business functions. DOL data can serve a variety of purposes, and these “data roles” vary not just by the type of data that are collected and managed, but how they are used. This is described succinctly by DOL in the following way:<br />
-DOL has a diverse collection of applications to support its operational needs. There are many common data elements across these applications that are currently being defined and used separately and inconsistently. While this usually has no impact on the operation of the individual applications, it creates problems when trying to match and accumulate data from multiple systems for analysis and forecasting.
-A helpful way to think about the roles that data plays at DOL is that they can be either as reference data or entity data.</p>
+<p>The Department of Licensing, like any complex organization, has a variety of data that it collects and manages over time to execute business functions. DOL data can serve a variety of purposes, and these “data roles” vary not just by the type of data that are collected and managed, but how they are used. This is described succinctly by DOL in the following way:</p>
+<blockquote>
+<p>DOL has a diverse collection of applications to support its operational needs. There are many common data elements across these applications that are currently being defined and used separately and inconsistently. While this usually has no impact on the operation of the individual applications, it creates problems when trying to match and accumulate data from multiple systems for analysis and forecasting.</p>
+</blockquote>
+<p>A helpful way to think about the roles that data plays at DOL is that they can be either as reference data or entity data.</p>
 <ul>
 <li><p>Reference Data: This is the most straightforward type of data. It is comprised of simple lists which are directly defined at the enterprise level for use in all applications. This includes items like States, Counties, Fee Types, etc. These lists tend to be defined by outside sources and change very infrequently.</p></li>
 <li><p>Entity Data: This is the more complex type of data. It is comprised of data that is common
@@ -179,8 +176,8 @@ across applications, but instead of being centrally defined, is entered or gener
 updated within multiple applications. The classic example of this is customer data.
 This data tends to be complex in structure and change very frequently.</p></li>
 </ul>
-<p>Both reference and entity data in DOL are roles that different information objects can play. This relational nature of the data helps us to understand when its appropriate to, for example, apply a broad standard for editing or cleaning data, applying a data quality checklist, or even recommending a data source to a customer. Reference data should depend upon external sources for validation and reliability (components of data quality that we will review in the next chapter). Entity data, as described above) can have a more relational or real time application that can shift or change given a context.</p>
-<p>A breakdown of what we’ve covered in this section so far: Data have types and roles that impact how it is used as evidence. Data types are distinguished by the structure or format of the data, and Data roles are distinguished by how the data might be used (as reference data or as entity data)</p>
+<p>Both reference and entity data in DOL are roles that different information objects can play. This relational nature of the data helps us to understand when its appropriate to, for example, apply a broad standard for editing or cleaning data, applying a data quality checklist, or even recommending a data source to a customer. Reference data should depend upon external sources for validation and reliability (components of data quality that we will review in the next chapter). Entity data, as described above can have a more relational or real time application that can shift or change given a context.</p>
+<p>A breakdown of what we’ve covered in this section so far: Data have types and roles that impact how it is used as evidence. Data types are distinguished by the structure or format of the data, and data roles are distinguished by how the data might be used (as reference data or as entity data).</p>
 </div>
 </div>
 <div id="categories-of-data" class="section level2" number="1.2">
@@ -217,16 +214,19 @@ This data tends to be complex in structure and change very frequently.</p></li>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>This categorization comes from the following publication (OCIO 141.10 and DOL policy 1.7.11)</p>
+</blockquote>
 <p>These categories are essential to understanding not only how data should be governed (discussed in depth below), but also for identifying the role that data might appropriately play. For example, if a customer requests Category 4 data, as a steward of DOL we would need to ensure that the customer has proper credentials to accept this data, and verify that the data is transferred to the customer in a secure and reliable manner.</p>
 </div>
 <div id="data-collections" class="section level2" number="1.3">
 <h2><span class="header-section-number">1.3</span> Data Collections</h2>
-<p>Another helpful distinction to draw is whether data are standalone products, or collections of multiple data sources that are of value to a stakeholder. For example the WA State Department of Transportation collects traffic data from each Route or Highway in the state. Individually a data source may be just about one specific Highway, but in total all data about all Highways in Washington constitute a collection of data.
+<p>Another helpful distinction to draw is whether data are standalone products, or collections of multiple data sources that are of value to a stakeholder. For example the WA State Department of Transportation collects traffic data from each route or highway in the state. Individually a data source may be just about one specific Highway, but in total all data about all Highways in Washington constitute a collection of data.
 The National Science Board (2005) provides a helpful distinction between three types of data collections:</p>
 <ul>
 <li>General Data Collections: These data have minimal processing or quality checks and may not conform to standards for format and structure—if such standards exist at all. These collections usually are developed by and for a specific internal DOL client and may not be preserved beyond the end of a project. Many thousands of these collections likely exist throughout the department - stored on shared drives or even personal desktops.</li>
 <li>Community Data Collections: These collections may follow standards for a community of potential clients, whether by adoption of existing standards or by developing new standards. Resource data collections may receive some direct funding from DOL or be created to comply with a particular records management requirement for making data accessible to the public.</li>
-<li>Reference Data Collections: Are those that serve large communities, conform to robust standards, and are sustained indefinitely. These collections have large budgets, diverse and distributed stakeholders or clients that depend on these data as well as established governance structures.</li>
+<li>Reference Data Collections: Are those that serve large communities, conform to robust standards, and are sustained indefinitely. These collections have large budgets, diverse and distributed stakeholders, and clients that depend on these data as well as established governance structures.</li>
 </ul>
 </div>
 <div id="fair-data" class="section level2" number="1.4">
@@ -235,13 +235,15 @@ The National Science Board (2005) provides a helpful distinction between three t
 </div>
 <div id="data-stewardship" class="section level2" number="1.5">
 <h2><span class="header-section-number">1.5</span> Data Stewardship</h2>
-<p>As a data steward your job will include a variety of department specific tasks, but more generally stewardship is used to describe “accountability and responsibility for data and processes that ensure effective control and use of data assets. Stewardship can be formalized through job titles and descriptions, or it can be a less formal function driven by people trying to help an organization get value from its data”</p>
-<p>Some general tasks that might be included in data stewardship:
-- Creating and managing metadata.
-- Documenting rules and standards.
-- Managing Data Quality issues.
-- Executing operational Data Governance activities.
-- Setting and managing guidelines around data access.</p>
+<p>As a data steward our job will include a variety of department specific tasks, but more generally stewardship is used to describe “accountability and responsibility for data and processes that ensure effective control and use of data assets. Stewardship can be formalized through job titles and descriptions, or it can be a less formal function driven by people trying to help an organization get value from its data.”</p>
+<p>Some general tasks that might be included in data stewardship:</p>
+<ul>
+<li>Creating and managing metadata.</li>
+<li>Documenting rules and standards.</li>
+<li>Managing Data Quality issues.</li>
+<li>Executing operational Data Governance activities.</li>
+<li>Setting and managing guidelines around data access.</li>
+</ul>
 </div>
 <div id="data-quality" class="section level2" number="1.6">
 <h2><span class="header-section-number">1.6</span> Data Quality</h2>
@@ -253,16 +255,10 @@ The National Science Board (2005) provides a helpful distinction between three t
 <ul>
 <li>Authority and Control - Who will make decisions, and where are decision making processes documented, for planning, monitoring, and enforcing data management?</li>
 <li>Security - What are the requirements for secure, trusted, authentic data and access regulations in an organization? This includes identity management, as well as the following:</li>
-<li><ul>
 <li>Planning - How is security described across the organizational assets under management?</li>
-</ul></li>
-<li><ul>
 <li>Monitoring - How often are security plans and responsibilities updated, what will constitute a necessary revision of security plans?</li>
-</ul></li>
-<li><ul>
 <li>Evaluating - How are security plans and monitoring evaluated and by whom?</li>
-</ul></li>
-<li>Accountability - If planning, monitoring, or security is not followed, what are the consequences and to whom does responsibility for enforcement ultimately lie with.</li>
+<li>Accountability - If planning, monitoring, or security is not followed, what are the consequences and to whom does responsibility for enforcement ultimately lie with?</li>
 <li>Quality - What constitutes a quality assurance and who is responsible for carrying out either evaluation of quality or updating of data quality standards?</li>
 </ul>
 <p>In future chapters we will discuss data storage and data infrastructures, but it helps to foreground those discussions with a simple model depicting the central role of data governance. Data governance includes decisions about not just data, but also the hardware, software, and implementation of policies throughout a data lifecycle. A good data governance model will specify how each of these different aspects of data management should be carried, and will be the basis for creating policies that govern individual data stewardship work.</p>
@@ -278,12 +274,13 @@ The National Science Board (2005) provides a helpful distinction between three t
 <li>Ownership - Who is the responsible party that can make a claim of data - this is often based on licenses, rights of individuals who own data about themselves, or even state and federal regulations about data access.</li>
 <li>Transparency - What do data contain, and how are data about individuals or institutions clearly and coherently documented for potential use. This should include any restrictions of the quality or validity of data.</li>
 <li>Consent - If data contains information about people or groups of people then there must be some documented consent that the data is able to be used for a specific purpose. Consent often goes beyond a license - because it entails not just that the data can be accessed and used, but whether or not the data subjects have given their permission to do so.</li>
-<li>Privacy - If data contains information that may be traceable to an individual or institution then there should be guidance or regulation on how the privacy of those stakeholders can be preserved, and who has access to data at what level of privacy preservation</li>
+<li>Privacy - If data contains information that may be traceable to an individual or institution then there should be guidance or regulation on how the privacy of those stakeholders can be preserved, and who has access to data at what level of privacy preservation.</li>
 <li>Openness - Data access often falls on a spectrum from freely accessible to anyone with an internet connection to accessible only through a data sharing agreement, or even through a formal data records request.</li>
 </ul>
 <p>While these are not the only issues that you may face as a data steward working at DOL - it is often helpful to refer to these different ethical questions to determine what ethics are at stake when making a decision about how to prepare data, how to decide upon data access controls, and what stakeholder privacy means in the context of data release.</p>
 <p>DOL’s Policy 1.7.12 addresses Data Ethics directly. The initial statements of the policy emphasize the trust relationship between a government agency and the people of the state as the basis for data ethics in the agency.</p>
-<p>Here’s an excerpt:
+<p>Here is an excerpt:
+&gt;
 1. Customer Trust: As the steward of customers’ data, the Agency has an obligation to ethically handle data in a manner that builds and maintains trust.
 2. Respecting the Person Behind the Data: The Agency respects customers’ right to privacy and will only collect the minimum personal information required by law to fulfill business purposes.
 3. Transparency in the Collection and Use of Data: Customers have the right to know how the Agency and others use their data. The Agency will be transparent about: What data we collect; How we use it; and Who we share it with and for what purposes.</p>
@@ -297,7 +294,7 @@ The National Science Board (2005) provides a helpful distinction between three t
 </div>
 <div id="summary" class="section level2" number="1.9">
 <h2><span class="header-section-number">1.9</span> Summary</h2>
-<p>In this chapter we have introduced a number of important concepts for data stewardship including how data might be differentiated based on its type or its role - types of data are based on structure, and these types are usually fixed and unchanging whereas the role of data, such as entity data or reference data, can vary given the application or context of how data are used. We also covered four broad categories that can be used to describe data that are managed in DOL - these include public information, sensitive information, confidential information, and confidential information requiring specific handling. These categories help to further differentiate data by the role they might play for analysis by a customer, or in data governance that attempts to systematically create rules for data access. We also discussed some principles that govern ethical handling of data, including ownership of data, privacy and consent.</p>
+<p>In this chapter we have introduced a number of important concepts for data stewardship including how data might be differentiated based on its type or its role - types of data are based on structure, and these types are usually fixed and unchanging whereas the role of data, such as entity data or reference data, can vary given the application or context of how data are used. We also covered four broad categories used to describe data that are managed in DOL - these include public information, sensitive information, confidential information, and confidential information requiring specific handling. These categories help to further differentiate data by the role they might play for analysis by a customer, or in data governance that attempts to systematically create rules for data access. We also discussed some principles that govern ethical handling of data, including ownership of data, privacy, and consent.</p>
 
 </div>
 <div id="example-1" class="section level2 unnumbered rmdcaution">
@@ -305,7 +302,7 @@ The National Science Board (2005) provides a helpful distinction between three t
 <p>Throughout the first chapter of this book we’ve discussed the idea that data are fundamentally relational - they mean different things to different customers at different points in time. To understand this relational nature of data it can be helpful to look at an example of how the same data are displayed to customers in different settings. These settings drive the stewarship of data given the needs of a customer that may vary over time.</p>
 <p>Below is a screenshot of the <a href="https://www.wsdot.wa.gov/data/tools/geoportal/?config=traffic">Washington Department of Transportation’s Traffic GeoData Portal</a>. This map displays realtime traffic count data from routes and interstates throughout Washington.</p>
 <p><img src="_book/images/V2.png" /></p>
-<p>This traffic map is interactive - it allows a customer to select a route, or even a point on a route, where data traffic is collected and see the realtime estimates of things like “How many single unit trucks are on this route in the last hour.” This view of the data is useful for getting a quick overview of what the state of traffic is at any one moment in time. But, lets assume that instead of a quick overview of the realtime data an analyst at DOL wants access to the data that is powering this visualiztion. They may want this data for a variety of reasons - they may want to map all of the single use trucks on the road for June 1st and determine what percentage of singule use trucks are licsensed in the state of the WA. The WSDOT traffic geodata portal allows us to view this data by selecting a polygon and “printing” the data. If we choose to do this then we get an easy to manipulate data table that looks like the following:</p>
+<p>This traffic map is interactive - it allows a customer to select a route, or even a point on a route, where data traffic is collected and see the realtime estimates of things like “How many single unit trucks are on this route in the last hour.” This view of the data is useful for getting a quick overview of what the state of traffic is at any one moment in time. But, lets assume that instead of a quick overview of the realtime data an analyst at DOL wants access to the data that is powering this visualiztion. They may want this data for a variety of reasons - they may want to map all of the single use trucks on the road for June 1st and determine what percentage of singule use trucks are licensed in the state of the WA. The WSDOT traffic geodata portal allows us to view this data by selecting a polygon and “printing” the data. If we choose to do this then we get an easy to manipulate data table that looks like the following:</p>
 <table>
 <colgroup>
 <col width="5%" />
